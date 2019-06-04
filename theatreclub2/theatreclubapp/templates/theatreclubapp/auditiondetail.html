@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>{{ audition.auditionename }}</h2>
+<p>URL: {{ audition.auditionURL }}</p>
+<p>Added by: {{ audition.user }}</p>
+<p>Date entered: {{ audition.entrydate }}</p>
+<p>Audition Description: {{ audition.auditiondescription }}</p>
+
+{% endblock %}

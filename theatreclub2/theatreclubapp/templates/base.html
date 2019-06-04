@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+ <html> 
+<head> 
+<title>Theatre Club</title> 
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> 
+<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'> 
+</head> 
+<body> 
+<div class='jumbotron' style="background-color:red; color: rgb(255, 240, 198);"> 
+<h1>Theatre Club</h1>
+ </div> 
+   <nav class="navbar navbar-default"> 
+   <div class="container-fluid">
+<div class="navbar-header"> 
+<a class="navbar-brand" href="{% url 'index' %}">Theatre Club</a> 
+</div> 
+<ul class="nav navbar-nav"> 
+<li><a href="{% url 'lessons' %}">Lessons</a></li>
+<li><a href="{% url 'events' %}">Events</a></li>
+<li><a href="{% url 'auditions' %}">Auditions</a></li>
+<li><a href="{% url 'newlesson' %}">Add Lesson</a></li>
+<li><a href="{% url 'newevent' %}">Add Event</a></li>
+<li><a href="{% url 'newaudition' %}">Add Audition</a></li>
+<li><a href="{% url 'login' %}">Login</a></li>
+<li><a href="{% url 'logout' %}">Logout</a></li>
+
+</ul> 
+</div> 
+</nav> 
+<div class="container-fluid"> 
+{% block content %} 
+
+{% endblock content %} 
+</div> 
+</body> 
+</html>
